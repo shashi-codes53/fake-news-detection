@@ -121,4 +121,4 @@ if __name__ == "__main__":
     load_model()
     print("\n[API] Starting Flask server on http://localhost:5000")
     print("[API] Press Ctrl+C to stop\n")
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
