@@ -157,7 +157,7 @@
 <div class="footer">Powered by TF-IDF + BERT · Shashikant Nikam</div>
 
 <script>
-  const API = "http://localhost:5000/predict";
+  const API = "https://fake-news-detection-rrs0.onrender.com/predict";
 
   document.getElementById("grabPageBtn").addEventListener("click", () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -198,7 +198,7 @@
       document.getElementById("loading").style.display  = "none";
       const box = document.getElementById("errorBox");
       box.style.display = "block";
-      box.textContent = "❌ Cannot reach API. Make sure app.py is running on localhost:5000.";
+      box.textContent = "❌ Cannot reach the deployed API. Please try again.";
     }
   });
 
