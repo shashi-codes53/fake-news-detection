@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Dataset files (too large)
+data/*.csv
+data/liar/
+
+# Trained models
+outputs/checkpoints/*.pkl
+outputs/checkpoints/*.pt
+
+# Logs
+outputs/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
